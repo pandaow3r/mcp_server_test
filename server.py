@@ -1,8 +1,8 @@
 from mcp.server.fastmcp import FastMCP
-from app import dummyTool
+from app import getWeatherInfo
 
 # Initialize MCP server
-mcp = FastMCP("your-mcp-name")
+mcp = FastMCP("mcp_server_test")
 
 @mcp.tool()
 async def weather_tool(location: str) -> str:
